@@ -577,7 +577,7 @@ body{
 }
 
 .look1 {
-  padding: 10rem 5rem;
+  padding: 10rem 15rem;
 }
 
 .image-section img {
@@ -588,8 +588,8 @@ body{
 }
 
 .text-section{
-  padding-left: 4rem;
-  padding-right: 10rem;
+  padding-left: 0rem;
+  padding-right: 3rem;
   margin-bottom: 4rem;
 }
 
