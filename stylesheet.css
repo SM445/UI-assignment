@@ -28,6 +28,7 @@ body{
 
 .navbar .navbar-nav .nav-item{
   margin-right:6rem;
+  text-align: center;
 }
 
 .navbar .navbar-nav .nav-item .nav-link{
@@ -146,57 +147,32 @@ body{
 
 .image-shape-service {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: auto;
   background-size: cover;
 }
 
 
 .image-shape-service img {
-  width: 80px;
-  height: 80px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
 .image-shape2-service {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 50%;
+  height: auto;
   background-size: cover;
 
 }
 
 
 .image-shape2-service img{
-  width: 48px;
-  height: 48px;
+  width: 50%;
+  height: auto;
   object-fit: cover;
 }
-
-.image-shape-service i {
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.8vw; /* Responsive font size using viewport width */
-  min-width: 32px;
-  min-height: 32px;
-  color: white;
-  padding: 5px;
-}
-
-.image-shape2-service i {
-  position: absolute;
-  bottom: 8%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 0.8vw; /* Responsive font size using viewport width */
-  min-width: 12px;
-  min-height: 12px;
-  color:#EF6D58;
-  padding: 5px;
-}
-
 
 
 .service {
@@ -245,22 +221,6 @@ body{
   border: 1px solid #ded3c3;
   padding: 5% 3%; /* Add some padding to create space between the border and content */
   border-radius: 5px;
-}
-
-.des-img img,
-.dev-img img{
-  max-width: 100%;
-  height: auto;
-  padding-bottom: 4%;
-}
-
-.des-img2 img,
-.dev-img2 img {
-
-  margin: 0;
-  padding: 0;
-
-
 }
 
 .des-text h3{
@@ -375,8 +335,6 @@ body{
   font-weight: 900;
 }
 
-
-
 .text-button-container .btn {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -396,7 +354,7 @@ body{
 
 .portfolio-item {
   position: relative;
-  margin-bottom: 10px;
+
 }
 
 .portfolio-item img {
@@ -479,8 +437,6 @@ body{
   margin: 0rem;
   padding-top: 12rem;
 
-
-
 }
 
 .prof-text{
@@ -560,67 +516,57 @@ body{
 
 .years-container {
   background-color: #FDF0E9;
-  padding: 1rem 5rem 7rem;
-
+  padding: 1rem 2rem 7rem;
 }
 
 .border-around-years {
   border: 1px solid #ded3c3;
   border-radius: 5px;
-  padding: 2rem 0 2rem 3rem;
-
+  padding: 2rem 1rem;
 }
 
-.years-row{
-  margin: 0 9rem;
-}
-
-.years-img {
-
+.years-row {
+  margin:0 10rem; /* Adjust margin as needed */
 }
 
 .image-shape {
   background-color: #bd5d4a;
-  height: 80px;
-  width: 80px;
-
+  height: 60px; /* Adjust height as needed */
+  width: 60px; /* Adjust width as needed */
+  border-radius: 50%; /* Make it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .years-img img {
-  height: 112px;
-  width: 112px;
+  max-height: 80px;
+  max-width: 80px;
 }
 
-
-
 .years-text h4 {
-  width: 15rem;
   margin: 0;
   font-size: 1rem;
   font-weight: 400;
   color: #391400;
-  margin-left: 1rem;
-  font-size: 18px;
+  margin-top: 1rem; /* Adjust margin as needed */
 }
 
 .years-text h3 {
-  font-size: 40px;
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.5rem; /* Adjust font size as needed */
   font-weight: 800;
   color: #391400;
-  margin-left: 1rem;
-  margin-top:2rem;
+  margin-top: 1rem; /* Adjust margin as needed */
 }
 
 .years-img i {
   position: absolute;
-  font-size: 48px;
-  min-width: 48px;
-  min-height: 48px;
+  font-size: 32px; /* Adjust font size as needed */
   color: white;
-  bottom:35%;
-  left:14%;
+  bottom: 20%;
+  left: 20%;
 }
 
 /*----------------------------New Look------------------------*/
@@ -1011,6 +957,7 @@ body{
   color: whitesmoke;
   font-size: 20px;
   font-weight: 400;
+  margin-bottom: 2rem;
 
 }
 
@@ -1024,7 +971,8 @@ body{
   flex: 0 0 50%;
   margin: 0;
   padding: 0;
-  border: 1px solid #ded3c3; /* Add border around col-2-faq-row */
+  border: 1px solid #ded3c3;
+  border-radius: 2rem 2rem 0 0;
 
 }
 
@@ -1033,6 +981,7 @@ body{
   padding: 0;
   border: 1px solid #ded3c3;
   background-color: whitesmoke;
+  border-radius: 2rem 2rem 0 0;
 }
 
 .col-2-faq-row-para{
@@ -1083,6 +1032,7 @@ body{
   padding: 30px 15px;
   width: 100%;
   border: 1px solid #ded3c3; /* Add border around col-2-faq-row */
+
 
 }
 
@@ -1517,7 +1467,7 @@ body{
 .pictures {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .picture {
@@ -1633,32 +1583,28 @@ body{
     padding: 3% 2%;
   }
 
-
-  /* Use flexbox for the .row inside .border-around */
   .border-around .row {
     display: flex;
     align-items: center;
   }
 
-  /* Set .col-md-6 to take 50% width */
   .border-around .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  /* Add flex-wrap: wrap for .border-around */
   .border-around {
     flex-wrap: wrap;
   }
 
   .image-shape-service {
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    height: auto;
   }
 
   .image-shape2-service {
-    width: 40px;
-    height: 40px;
+    width: 60%;
+    height: auto;
   }
 
   .prof-container {
@@ -1690,7 +1636,7 @@ body{
   }
 
   .years-img{
-    margin: 0;
+    margin: 0 1rem;
     padding: 0;
     text-align: left;
     margin-bottom: 1rem;
@@ -1840,8 +1786,6 @@ body{
 
 }
 
-
-/* Medium screens (min-width: 768px) and (max-width: 1199px) */
 @media (min-width: 768px) and (max-width: 1199px) {
   .navbar .navbar-brand,
   .navbar .navbar-nav .nav-item,
@@ -2092,3 +2036,146 @@ body{
 }
 
 
+
+@media (min-width: 1801px) and (max-width: 2600px) {
+
+  .main-container {
+    margin: 0 auto;
+    padding: 2rem 22rem;
+  }
+
+  .main-text {
+    margin: 0 auto;
+    padding: 2rem 10rem;
+  }
+  .main-image {
+    margin: 0 auto;
+    padding: 2rem 0rem;
+    padding-left: 8rem;
+  }
+
+  .service-container {
+    padding: 20px 15%;
+  }
+
+  .border-around {
+    padding: 4% 2%;
+  }
+
+  .border-around .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: center;
+  }
+
+  .border-around {
+    flex-wrap: wrap;
+  }
+
+  .years-row {
+    margin: 0 22rem;
+  }
+
+  .prof-container {
+    padding-top: 5rem;
+    padding-right: 0rem;
+    padding-left: 19rem;
+    text-align: left;
+
+
+  }
+
+  .prof-text {
+    padding-top: 4rem;
+    padding-left: 0rem;
+    text-align: center;
+  }
+
+  .prof-image {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .prof-image img {
+    width: 70%;
+    height: auto;
+  }
+
+  .look1 {
+    margin: 0 auto;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    padding-left: 35rem;
+    padding-right: 30rem;
+  }
+
+  .text-section,
+  .image-section {
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .check-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .getstarted,
+  .text-and-button,
+  .text-only {
+    padding: 1rem 3rem;
+    margin: 0 auto;
+  }
+
+  .clients-row{
+    padding:0 8rem;
+  }
+
+  .clients h1 {
+    margin: 2rem auto;
+    padding: 0rem 4rem;
+    font-size: 45px;
+  }
+
+  .clients h3 {
+    text-align: center;
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+
+  .clients-row {
+    margin: 5rem auto;
+  }
+
+  .seeall {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .newsletter-form {
+    width: 100%;
+    margin: 0;
+    padding: 2rem 30rem 2rem 30rem;
+  }
+
+  .newsletter-form input[type="email"],
+  .newsletter-form button {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-section{
+    padding: 10rem 38rem;
+
+  }
+
+  .contact {
+    padding: 0 5rem;
+  }
+
+
+}
