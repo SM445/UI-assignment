@@ -145,36 +145,6 @@ body{
 
 /*--------------------SERVICE------------------------------------- */
 
-.image-shape-service {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background-size: cover;
-}
-
-
-.image-shape-service img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.image-shape2-service {
-  position: relative;
-  width: 50%;
-  height: auto;
-  background-size: cover;
-
-}
-
-
-.image-shape2-service img{
-  width: 50%;
-  height: auto;
-  object-fit: cover;
-}
-
-
 .service {
   background-color: #FDF0E9;
   padding: 90px 0;
@@ -193,7 +163,7 @@ body{
 
 .service h5 {
   font-family: 'Epilogue', sans-serif;
-  color:#391400A3;
+  color: #391400A3;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 1rem;
@@ -213,79 +183,73 @@ body{
 }
 
 .service-container {
-  padding: 20px 20%; /* Use responsive units */
+  padding: 20px 10%;
   margin: 0;
 }
+
 
 .border-around {
   border: 1px solid #ded3c3;
-  padding: 5% 3%; /* Add some padding to create space between the border and content */
+  padding: 5% 3%;
+  border-radius: 5px 0 0 5px;
+}
+
+.border-around2 {
+  border: 1px solid #ded3c3;
+  padding: 5% 3%;
+  border-radius: 0 5px 5px 0;
+
+}
+
+.image-shape-service,
+.image-shape2-service {
+  text-align: left;
+  width: auto;
+  display: inline-block;
+}
+
+.image-shape-service img,
+.image-shape2-service img {
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
+  object-fit: cover;
 }
 
-.des-text h3{
-  font-family: 'Epilogue', sans-serif;
+.des-text h3,
+.dev-text h3 {
   font-size: 24px;
   font-weight: 700;
   color: #391400;
-  margin:0;
-  margin-left: 0rem;
-  padding: 0;
-  margin-bottom: 2rem;
-
-}
-
-.des-text2 h3{
-  text-align: left;
-  font-family: 'Epilogue', sans-serif;
-  text-align: left;
-  letter-spacing: 0;
-  font-size: 15px;
-  color: #391400;
-  font-weight: 400;
   margin: 0;
-  padding: 0;
+  margin-bottom: 1rem;
 }
 
-.dev-text h3{
-  font-family: 'Epilogue', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #391400;
-  margin-left: 0rem;
-  padding: 0;
-  margin-bottom: 2rem;
-}
-
-.dev-text2, .des-text2{
-  margin-left: -1rem;;
-}
-
+.des-text2 h3,
 .dev-text2 h3 {
-  font-family: 'Epilogue', sans-serif;
-  text-align: left;
-  letter-spacing: 0;
-  text-align: left;
   font-size: 15px;
   color: #391400;
   font-weight: 400;
   margin: 0;
-  padding: 0;
 }
+
 .des-para p,
 .dev-para p {
-  font-family: 'Epilogue', sans-serif;
-  padding-top: 3%;
-  margin-left: 1.5rem;
   font-size: 16px;
   color: #391400;
   text-align: left;
   font-weight: 400;
+  margin-bottom: 1rem;
+  margin-left:1.5rem;
 }
 
-.service-row{
-  flex: 0 0 calc(50% - 15px);
+.des-para,
+.dev-para {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 5px;
 }
+
 
 
 
@@ -426,29 +390,25 @@ body{
 
 /*--------------------PROFESSIONAL------------------------------------- */
 
-.professional{
+.professional {
   background-color: #FDF0E9;
-  padding-bottom: 5rem;
-
+  padding: 8rem 0 5rem 0;
 }
 
-.prof-container{
+.prof-container {
   display: flex;
-  margin: 0rem;
   padding-top: 12rem;
-
 }
 
-.prof-text{
-  flex:1;
+.prof-text {
+  flex: 1;
   color: whitesmoke;
   padding-right: 15rem;
   padding-left: 3rem;
   margin-right: 9rem;
-
 }
 
-.prof-text h6{
+.prof-text h6 {
   font-family: 'Epilogue', sans-serif;
   color: #EF6D58;
   margin-bottom: 1rem;
@@ -457,27 +417,25 @@ body{
   font-size: 16px;
 }
 
-.prof-text h1{
+.prof-text h1 {
   font-family: 'Epilogue', sans-serif;
   font-size: 56px;
-  font-weight:800;
+  font-weight: 800;
   margin-bottom: 1rem;
-  color:#391400;
+  color: #391400;
 }
 
-.prof-text h3{
-
+.prof-text h3 {
   font-size: 20px;
-  font-weight:thin;
   margin-bottom: 1rem;
   font-weight: 400;
-  color:#391400;
+  color: #391400;
 }
 
-.prof-text p{
+.prof-text p {
   font-size: 16px;
-  margin-bottom:2rem;
-  color:#391400;
+  margin-bottom: 2rem;
+  color: #391400;
   font-weight: 300;
 }
 
@@ -487,7 +445,7 @@ body{
   font-weight: 900;
 }
 
-.prof-text .btn{
+.prof-text .btn {
   color: #391400;
   background-color: whitesmoke;
   font-weight: 600;
@@ -496,20 +454,21 @@ body{
   border: none;
 }
 
-.prof-text .btn:hover{
+.prof-text .btn:hover {
   background-color: #391400;
   border-color: none;
   color: white;
 }
 
-
-.prof-text {
-  flex:1;
+.prof-image {
+  padding-left: 15rem;
 }
 
-
-.prof-image{
-  padding-left: 15rem;
+.prof-image img {
+  margin: 0 auto;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
 }
 
 /*--------------------YEARS OF EXPERIENCE------------------------------------- */
@@ -521,23 +480,23 @@ body{
 
 .border-around-years {
   border: 1px solid #ded3c3;
-  border-radius: 5px;
-  padding: 2rem 1rem;
+  border-radius: 5px 0 0 5px;
+  padding: 3rem 0rem 3rem 2rem;
+}
+
+.border-around-years2 {
+  border: 1px solid #ded3c3;
+  border-radius: 0px 5px 5px 0px;
+  padding: 3rem 0rem 3rem 2rem;
 }
 
 .years-row {
-  margin:0 10rem; /* Adjust margin as needed */
+  margin: 0 10rem;
 }
 
-.image-shape {
-  background-color: #bd5d4a;
-  height: 60px; /* Adjust height as needed */
-  width: 60px; /* Adjust width as needed */
-  border-radius: 50%; /* Make it a circle */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+.text-spacing {
+  margin-top: 0rem;
+  margin-left: 2rem;
 }
 
 .years-img img {
@@ -547,60 +506,47 @@ body{
 
 .years-text h4 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 400;
   color: #391400;
-  margin-top: 1rem; /* Adjust margin as needed */
 }
 
 .years-text h3 {
   margin: 0;
-  font-size: 1.5rem; /* Adjust font size as needed */
+  font-size: 40px;
   font-weight: 800;
   color: #391400;
-  margin-top: 1rem; /* Adjust margin as needed */
 }
-
-.years-img i {
-  position: absolute;
-  font-size: 32px; /* Adjust font size as needed */
-  color: white;
-  bottom: 20%;
-  left: 20%;
-}
-
 /*----------------------------New Look------------------------*/
 
 .new-look {
-  background-color:#28293E;
-
+  background-color: #28293E;
 }
 
 .look1 {
-  padding: 10rem 15rem;
+  padding: 10rem 13rem;
 }
 
 .image-section img {
-  width: 570;
-  height: 580;
+  max-width: 100%;
+  height: auto;
   padding-right: 4rem;
-
 }
 
-.text-section{
-  padding-left: 0rem;
-  padding-right: 3rem;
+.text-section {
+  text-align: left;
   margin-bottom: 4rem;
+  margin-left: 0rem;
+  padding: 2rem 13rem 2rem 0rem;
 }
-
 
 .text-section h6 {
   font-size: 16px;
   font-weight: 300;
   color: #EF6D58;
-  font-weight: 700;
   letter-spacing: 3px;
   font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 .text-section h1 {
@@ -608,36 +554,35 @@ body{
   font-weight: 800;
   color: whitesmoke;
   margin-bottom: 1rem;
-  padding-right: 10rem;
-
+  padding-right: 0;
 }
 
 .text-section h3 {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 2rem;
-  padding-right: 10rem;
   color: whitesmoke;
 }
 
 .check-container {
-  margin-bottom: 0rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
 }
 
 .check-image img {
   width: 32px;
   height: 32px;
-
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
-
 .check-text p {
-  font-size:16px;
-  margin-left: 0rem;
+  font-size: 16px;
   color: #FFFFFF;
-  margin: 7px;
   font-weight: 300;
-
+  margin: 0;
 }
 
 
@@ -654,22 +599,21 @@ body{
   top: -70px;
   left: 15%;
   transform: translateX(-50%);
-
 }
 
 .image-shape-gift {
   align-items: center;
-  height: 148px;
-  width: 148px;
-
+  max-width: 148px;
+  width: 100%;
+  height: auto;
 }
 
 .image-shape-gift img {
-  height: 148px;
-  width: 148px;
+  max-width: 100%;
+  height: auto;
 }
 
-.image-shape-gift i{
+.image-shape-gift i {
   position: absolute;
   color: whitesmoke;
   font-size: 2.1rem;
@@ -761,11 +705,12 @@ body{
 .clients {
   padding: 8rem 0 4rem;
   background-color: #FDF0E9;
+  text-align: center;
 }
 
 .clients h3 {
-  margin: 1rem 33rem;
-  padding: 0rem 20rem;
+  margin: 1rem auto;
+  max-width: 800px;
   color: #EF6D58;
   font-size: 16px;
   font-weight: 400;
@@ -773,15 +718,13 @@ body{
 }
 
 .clients h1 {
-  text-align: center;
   font-size: 56px;
   font-weight: bolder;
   color: #391400;
-  margin: 1rem 23rem;
-  padding: 0rem 20rem;
-  font-family: 800;
+  margin: 1rem auto;
+  max-width: 800px;
+  font-family: 'Epilogue', sans-serif;
 }
-
 .clients img {
   max-width: 100%;
   height: auto;
@@ -793,6 +736,13 @@ body{
 }
 
 .clients .border-around {
+  border: 1px solid #ded3c3;
+  border-radius: 5px;
+  padding: 3rem 3rem;
+  margin: 0rem 0rem 2.5rem;
+}
+
+.clients .border-around2 {
   border: 1px solid #ded3c3;
   border-radius: 5px;
   padding: 3rem 3rem;
@@ -972,7 +922,7 @@ body{
   margin: 0;
   padding: 0;
   border: 1px solid #ded3c3;
-  border-radius: 2rem 2rem 0 0;
+  border-radius: 5px 5px 0 0;
 
 }
 
@@ -981,7 +931,7 @@ body{
   padding: 0;
   border: 1px solid #ded3c3;
   background-color: whitesmoke;
-  border-radius: 2rem 2rem 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .col-2-faq-row-para{
@@ -1052,7 +1002,6 @@ body{
   }
 
 
-/* Bottom image */
 .bottom-image-faq {
   text-align: center;
   margin-top: 30px;
@@ -1072,7 +1021,7 @@ body{
 .container.blog {
   max-width: 1300px;
   margin: 0 auto;
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
 
 }
 
@@ -1092,7 +1041,6 @@ body{
   font-size: 56px;
   font-weight: 800;
   margin-bottom: 0px;
-  margin-right: 15rem;
   color: #391400;
 }
 
@@ -1124,6 +1072,7 @@ body{
 
 .blog-image {
   text-align: left;
+  margin-bottom: 1rem;
 }
 
 .blog-image img {
@@ -1153,6 +1102,11 @@ body{
   font-weight: 300;
   text-align: left;
 }
+
+.blog-image2 {
+  margin-bottom: 2rem;
+}
+
 
 .blog-image2 img {
   text-align: center;
@@ -1261,151 +1215,129 @@ body{
 
 /* -----------------CONTACT----------------*/
 .contact-section {
-  padding: 8rem 0;
-  background-color:#28293E;
-}
-
-.contact{
- padding:0 26rem;
-}
-
-.connect-form {
-  max-width: 474px;
-  height: auto;
-  background-color: #ffffff;
-  padding: 5rem 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+    padding: 4rem 3rem;
+    background-color: #28293E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-form {
-  text-align: right;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: #e3715b;
+    color: #e3715b;
+}
 
+.form-group input{
+  border: 1px solid #F3D1BF; /* Set the border color */
+
+}
+
+.form-group textarea{
+  border: 1px solid #F3D1BF; /* Set the border color */
+
+}
+
+.form-group input::placeholder {
+  color:rosybrown;
+}
+
+.form-group textarea::placeholder {
+  color: rosybrown;
+}
+
+
+.contact-info {
+    background-color: #28293E;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-heading {
-  font-size: 24px;
-  font-weight: 700;
-  color: #391400;
-  margin: 0;
-  padding-bottom: 1rem;
-  text-align: left;
-}
+    font-size: 24px;
+    font-weight: 700;
+    color: #391400;
+    margin: 0;
+    padding-bottom: 1rem;
 
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 1rem;
-}
-
-.form-group {
-  margin-bottom: 10px;
 }
 
 .form-control {
-  padding: 1rem 1rem;
-  margin-bottom: 2px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  border: 1px solid #F3D1BF;
+    padding: 1rem;
+    margin-bottom: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 #submit-now {
-  font-family: 'Epilogue', sans-serif;
-  font-size: 16px;
-  font-weight: 900;
-}
-
-.contact-form .btn {
-  padding: 8px 20px;
-  background-color:#EF6D58;
-  height: 48px;
-  width: 154px;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  align-items: right;
-  font-weight: bold;
-}
-
-
-.contact-form .btn:hover {
-  padding: 8px 20px;
-  background-color:whitesmoke;
-  color:#EF6D58;
-  border: none;
-}
-.contact-info {
-
-  padding: 20px;
-  padding-top:3rem;
-  padding-left: 6rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-weight: 900;
+    padding: 8px 20px;
+    background-color: #e3715b;
+    border: none;
 }
 
 .contact-info h5 {
-  font-size: 16px;
-  color: #EF6D58;
-  margin-bottom: 5px;
-  letter-spacing: 3px;
-  font-weight: 400;
+    font-size: 16px;
+    color: #EF6D58;
+    margin-bottom: 5px;
+    font-weight: 400;
 }
 
 .contact-info h1 {
-  font-size: 54px;
-  font-weight: bold;
-  color: whitesmoke;
-  margin: 0;
-  margin-bottom: 10px;
+    font-size: 54px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .contact-info p {
-  font-size: 16px;
-  color: whitesmoke;
-  margin-bottom: 20px;
-  font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 300;
 }
 
 .contact-row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .contact-icon-container {
-  position: relative;
-  margin-right: 10px;
+    position: relative;
+    margin-right: 10px;
 }
 
 .contact-icon-container img {
-  width: 48px;
-  height: 48px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 0.5rem;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .contact-icon {
-  position: absolute;
-  top: 45%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-  color: #fff;
-  height: 23px;
-  width: 23px;
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+    height: 23px;
+    width: 23px;
 }
 
 .contact-text {
-  font-size: 20px;
-  color:whitesmoke;
-  font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
 }
 
 /*-------------------------PROJECT-------------------------*/
@@ -1575,65 +1507,99 @@ body{
     padding: 1rem;
   }
 
-  .service-container {
-    padding: 20px 10%;
+  .main-text h1{
+    font-size: 56px;
+  }
+
+  .service h1 {
+
+    font-size: 40px;
+
+  }
+
+  .des-text h3,
+  .dev-text h3,
+  .des-text2 h3,
+  .dev-text2 h3 {
+    margin-bottom: 0.5rem;
+    text-align: left;
   }
 
   .border-around {
-    padding: 3% 2%;
+    border-radius: 5px 5px 0 0px;
   }
 
-  .border-around .row {
-    display: flex;
-    align-items: center;
+  .border-around2 {
+    border-radius: 0 0 5px 5px;
+
   }
 
-  .border-around .col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
+  .border-around-years {
+    border-radius: 5px 5px 0 0;
   }
 
-  .border-around {
-    flex-wrap: wrap;
+  .border-around-years2 {
+    border-radius: 0 0 5px 5px;
+
   }
 
-  .image-shape-service {
-    width: 100%;
-    height: auto;
+  .clients .border-around {
+
+    border-radius: 5px 5px 0 0px;
+
   }
 
-  .image-shape2-service {
-    width: 60%;
-    height: auto;
+  .clients .bigger-column {
+    border-radius: 0;
+
+  }
+
+  .clients .border-around2 {
+
+    border-radius: 0px 0px 5px 5px;
+
+  }
+
+
+
+  .portfolio {
+    padding: 6rem 0rem 0rem 0rem;
+  }
+
+  .portfolio-text h1{
+    font-size: 40px;
+
+  }
+
+  .explore {
+    padding: 0rem 0rem 0rem 2rem;
+  }
+
+  .professional {
+    padding: 2rem 0;
   }
 
   .prof-container {
     padding-top: 5rem;
+    flex-direction: column;
+    align-items: center;
   }
 
   .prof-text {
-    padding: 1rem;
+    padding: 1rem 2rem;
+    margin-right: 0;
+
+  }
+
+  .prof-image {
+    padding-left: 0;
+    padding-right: 2rem;
   }
 
   .prof-text h1 {
-    font-size: 5rem;
+    font-size: 40px;
   }
 
-  .prof-text h3 {
-    font-size: 2rem;
-  }
-
-  .prof-image{
-    margin: 0;
-    padding: 0;
-  }
-
-  .prof-image img {
-    padding: 0;
-    margin: 0;
-    max-width: 100%;
-    height: auto;
-  }
 
   .years-img{
     margin: 0 1rem;
@@ -1651,45 +1617,62 @@ body{
     text-align: left;
   }
 
-  .years-text h3 {
-    font-size: 1.5rem;
-  }
-
   .look1{
     margin: 0;
-    padding: 1rem;
-    padding-bottom: 3rem;
+    padding: 7rem 0rem;
   }
+
   .text-section,
   .image-section {
     margin: 0;
-    padding: 1rem;
+    padding: 1rem 0rem;
   }
 
-  .check-image img {
-    max-width: 100%;
-    height: auto;
-
+  .image-section img {
+    padding-right: 0rem;
   }
+
+  .text-section h1 {
+    font-size: 40px;
+  }
+
+  .check-container {
+    margin-left: 1rem;
+  }
+
+  .image-shape-gift {
+    margin-left:4rem;
+  }
+
+  .image-shape-gift i {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 2.1rem;
+    right: 28%;
+    bottom: 40%;
+  }
+
+
 
   .getstarted ,
   .text-and-button,
   .text-only{
-    padding:1rem 3rem;
+    padding:2rem 1rem;
     margin: 0;
   }
 
+  .latest-blog-text h1 {
+    font-size: 40px;
+  }
+
+  .blog-image h1 {
+    font-size: 24px;
+  }
+
   .clients h1 {
-    padding: 0 4rem;
-    font-size: 45px;
-    margin:1rem 8rem 2rem 8rem;
-    text-align: center;
+    font-size: 40px;
   }
-  .clients h3 {
-    margin: 1rem 8rem;
-    padding: 0 2rem;
-    text-align: center;
-  }
+
   .clients .border-around{
     margin: 0;
   }
@@ -1744,22 +1727,19 @@ body{
   .newsletter-form {
     width: 100%;
     margin:0;
-    padding:0 0 0 2rem;
+    padding:0 0 1rem 1rem;
   }
 
   .newsletter-form input[type="email"], .newsletter-form button {
-    max-width: 100%;
-    margin-right: 0rem;
-  }
-
-  .contact{
-    padding:0 3rem;
-   }
-
-   .contact-info {
-    padding-left: 0rem;
+    max-width: 85%;
+    margin: 0rem;
 
   }
+
+  .contact-section {
+    padding: 4rem 1rem;
+    align-items: left;
+}
 
   .footer .row {
     flex-wrap: wrap;
@@ -1783,6 +1763,15 @@ body{
     margin-left:0;
   }
 
+  .contact-info h1 {
+    font-size: 40px;
+}
+
+.proj-text-class h1 {
+  font-size: 40px;
+
+}
+
 
 }
 
@@ -1801,35 +1790,6 @@ body{
     padding: 2rem;
   }
 
-  .service-container {
-    padding: 20px 15%;
-  }
-
-  .border-around {
-    padding: 4% 2%;
-  }
-
-
-
-  .border-around .row {
-    display: flex;
-    align-items: center;
-  }
-
-
-  .border-around .col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-
-  .border-around {
-    flex-wrap: wrap;
-  }
-
-  .years-row{
-    margin: 0;
-  }
 
   .prof-container {
     padding-top: 5rem;
@@ -1858,22 +1818,20 @@ body{
     height: auto;
   }
 
-  .look1{
-    margin: 0;
-    padding: 1rem;
-    padding-bottom: 3rem;
-  }
-  .text-section,
-  .image-section {
-    margin: 0;
-    padding: 1rem;
+  .look1 {
+    padding: 10rem 1rem;
   }
 
-  .check-image img {
 
+  .text-section {
+
+    padding-right: 0rem;
+  }
+
+  .image-section img {
     max-width: 100%;
     height: auto;
-
+    padding-right: 0rem;
   }
 
   .getstarted ,
@@ -1883,16 +1841,7 @@ body{
     margin: 0;
   }
 
-  .clients h1 {
-    margin:2rem 20rem;
-    padding: 0rem 4rem;
-    font-size: 45px;
-  }
-  .clients h3 {
-    text-align: center;
-    margin: 1rem 1rem;
-    padding: 0 1rem;
-  }
+
   .clients-row
   {
     margin: 5rem 3rem;
@@ -1913,19 +1862,9 @@ body{
   .newsletter-form {
     width: 100%;
     margin:0;
-    padding:2rem 0 2rem 2rem;
+    padding:2rem 0 3rem 2rem;
   }
 
-  .newsletter-form input[type="email"], .newsletter-form button {
-    align-items: left;
-    max-width: 100%;
-    margin: 0rem;
-    padding:0;
-
-  }
-.contact{
-  padding:0 10rem;
- }
 
  .text-md-left1{
   margin-left:0;
@@ -1949,30 +1888,6 @@ body{
     padding: 2rem;
   }
 
-  .service-container {
-    padding: 20px 15%;
-  }
-
-  .border-around {
-    padding: 4% 2%;
-  }
-
-  .border-around .row {
-    display: flex;
-    align-items: center;
-  }
-
-
-  .border-around .col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-
-  .border-around {
-    flex-wrap: wrap;
-  }
-
 
   .prof-container, .prof-text{
     margin:0;
@@ -1989,16 +1904,16 @@ body{
     height: auto;
   }
 
-  .clients h1 {
-    margin:2rem 20rem;
-    padding: 0rem 4rem;
-    font-size: 45px;
+  .look1 {
+    padding: 10rem 5rem;
   }
-  .clients h3 {
-    text-align: center;
-    margin: 1rem 1rem;
-    padding: 0 1rem;
+
+
+  .text-section {
+
+    padding-right: 10rem;
   }
+
   .clients-row
   {
     margin: 5rem 3rem;
@@ -2019,20 +1934,9 @@ body{
   .newsletter-form {
     width: 100%;
     margin:0;
-    padding:0 0 0 2rem;
+    padding:0 0 3rem 3rem;
   }
 
-  .newsletter-form input[type="email"], .newsletter-form button {
-    align-items: left;
-    max-width: 100%;
-    margin: 0rem;
-    padding:0
-
-  }
-
-  .contact{
-    padding:0 12rem;
-   }
 }
 
 
@@ -2052,28 +1956,6 @@ body{
     margin: 0 auto;
     padding: 2rem 0rem;
     padding-left: 8rem;
-  }
-
-  .service-container {
-    padding: 20px 15%;
-  }
-
-  .border-around {
-    padding: 4% 2%;
-  }
-
-  .border-around .col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    text-align: center;
-  }
-
-  .border-around {
-    flex-wrap: wrap;
-  }
-
-  .years-row {
-    margin: 0 22rem;
   }
 
   .prof-container {
@@ -2173,9 +2055,6 @@ body{
 
   }
 
-  .contact {
-    padding: 0 5rem;
-  }
 
 
 }
