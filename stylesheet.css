@@ -1351,8 +1351,8 @@ body{
 
 .contact-icon {
     position: absolute;
-    top: 50%;
-    left: 52%;
+    top: 52%;
+    left: 53.5%;
     transform: translate(-50%, -50%);
     font-size: 20px;
     color: #fff;
@@ -1848,6 +1848,20 @@ body{
     padding: 10rem 1rem;
   }
 
+  .years-container {
+    background-color: #FDF0E9;
+    padding: 0rem;
+  }
+
+  .years-text h4 {
+    font-size: 14px;
+
+  }
+
+  .years-text h3 {
+    font-size: 32px;
+
+  }
 
   .text-section {
 
@@ -1870,7 +1884,7 @@ body{
 
   .clients-row
   {
-    margin: 5rem 3rem;
+    margin: 5rem 1rem;
   }
 
 
@@ -1969,6 +1983,11 @@ body{
 
 @media (min-width: 1850px) and (max-width: 2600px) {
 
+  .navbar{
+    padding: 0 17rem;
+
+  }
+
   .main-container {
     margin: 0 auto;
     padding: 2rem 22rem;
@@ -2013,7 +2032,8 @@ body{
   .look1 {
     margin: 0 auto;
     padding: 1rem;
-    padding-bottom: 3rem;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
     padding-left: 35rem;
     padding-right: 30rem;
   }
