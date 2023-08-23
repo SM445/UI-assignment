@@ -1,5 +1,6 @@
 body{
   font-family: 'Epilogue', sans-serif;
+  overflow-x: hidden;
 }
 
 /*--------------------NAVBAR------------------------------------- */
@@ -52,6 +53,10 @@ body{
   color: whitesmoke;
   height: 46px;
   width: 138px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.65;
 }
 
 .navbar .navbar-nav .nav-item.contact-button .nav-link:hover{
@@ -120,6 +125,10 @@ body{
   border-color: #EF6C57;
   height: 48px;
   width: 154px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 2.4;
 
 }
 
@@ -206,14 +215,25 @@ body{
   text-align: left;
   width: auto;
   display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.image-shape-service img,
 .image-shape2-service img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
+}
+
+.image-shape2-service img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.des-text2, .dev-text2 {
+  margin-left: 1rem;
 }
 
 .des-text h3,
@@ -223,6 +243,10 @@ body{
   color: #391400;
   margin: 0;
   margin-bottom: 1rem;
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: 1rem;
+
 }
 
 .des-text2 h3,
@@ -231,6 +255,7 @@ body{
   color: #391400;
   font-weight: 400;
   margin: 0;
+  text-align: left;
 }
 
 .des-para p,
@@ -657,6 +682,7 @@ body{
   font-family: 'Epilogue', sans-serif;
   font-size: 16px;
   font-weight: 900;
+
 }
 
 .text-and-button .btn {
@@ -981,7 +1007,7 @@ body{
   border-radius: 5px;
   padding: 30px 15px;
   width: 100%;
-  border: 1px solid #ded3c3; /* Add border around col-2-faq-row */
+  border: 1px solid #ded3c3;
 
 
 }
@@ -1326,7 +1352,7 @@ body{
 .contact-icon {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 52%;
     transform: translate(-50%, -50%);
     font-size: 20px;
     color: #fff;
