@@ -1,697 +1,889 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Personal</title>
+  <head>
+    <title>Personal</title>
 
-  <meta chatset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta chatset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&family=Roboto:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="stylesheet.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <body>
+    <!--------- nav bar ---------------->
 
-</head>
-<body>
-
-  <!--------- nav bar ---------------->
-
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="Images/Navbar/logo.svg" alt="Logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item contact-button">
-            <a class="nav-link" id="contact" href="#">CONTACT</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!--------- main ---------------->
-
-  <div class="container-fluid main">
-    <div class="container-fluid main-container">
-      <div class="row align-items-md-center">
-        <div class="col-md-6 main-text text-left">
-          <h6>GABRIEL PIRES</h6>
-          <h1>The Simple, Clean Design</h1>
-          <p>Agency provides a full service range including technical skills, design and business understanding.</p>
-          <button class="btn btn-primary" id="see-my-work">SEE MY WORK</button>
-        </div>
-        <div class="col-md-6 main-image order-first order-md-last mx-auto">
-          <img src="Images/Main/pic.svg" alt="Introduction" class="img-fluid">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="Images/Navbar/logo.svg" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item contact-button">
+              <a class="nav-link" id="contact" href="#">CONTACT</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+
+    <!--------- main ---------------->
+
+    <div class="container-fluid main">
+      <div class="container-fluid main-container">
+        <div class="row align-items-md-center">
+          <div class="col-md-6 main-text text-left">
+            <h6>GABRIEL PIRES</h6>
+            <h1>The Simple, Clean Design</h1>
+            <p>
+              Agency provides a full service range including technical skills,
+              design and business understanding.
+            </p>
+            <button class="btn btn-primary" id="see-my-work">
+              SEE MY WORK
+            </button>
+          </div>
+          <div class="col-md-6 main-image order-first order-md-last mx-auto">
+            <img
+              src="Images/Main/pic.svg"
+              alt="Introduction"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <!--------- service ---------------->
+    <!--------- service ---------------->
 
-  <div class="container-fluid service">
-    <h6>SERVICE</h6>
-    <h1>How I Can Help <br> With You</h1>
+    <div class="container-fluid service">
+      <h6>SERVICE</h6>
+      <h1>
+        How I Can Help <br />
+        With You
+      </h1>
 
-    <div class="container-fluid service-container">
+      <div class="container-fluid service-container">
         <div class="row service-row">
-            <!-- First column with common border -->
-            <div class="col-md-6 border-around">
-                <div class="row align-items-md-center">
-
-                    <div class="col-md-6 des-img d-flex align-items-center">
-                        <div class="image-shape-service">
-                            <img src="Images/Service/1-.png" alt="Introduction">
-                        </div>
-                        <div class="des-text">
-                            <h3>Design</h3>
-                        </div>
-                    </div>
-
+          <!-- First column with common border -->
+          <div class="col-md-6 border-around">
+            <div class="row align-items-md-center">
+              <div class="col-md-6 des-img d-flex align-items-center">
+                <div class="image-shape-service">
+                  <img src="Images/Service/1-.png" alt="Introduction" />
                 </div>
-
-                <div class="row align-items-md-center">
-                    <div class="col-md-12 des-para">
-                        <p>Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
-                    </div>
+                <div class="des-text">
+                  <h3>Design</h3>
                 </div>
-
-                <div class="row align-items-md-center">
-                    <div class="col-md-6 des-img2 d-flex align-items-center">
-                        <div class="image-shape2-service">
-                            <img src="Images/Service/32-modified.png" alt="Introduction">
-                        </div>
-                        <div class="des-text2">
-                            <h3>Learn more</h3>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
 
-            <!-- Second column with common border -->
-            <div class="col-md-6 border-around2">
-                <div class="row align-items-md-center">
-
-                    <div class="col-md-6 dev-img d-flex align-items-center">
-                        <div class="image-shape-service">
-                            <img src="Images/Service/2-.png" alt="Introduction">
-                        </div>
-                        <div class="dev-text">
-                            <h3>Development</h3>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row align-items-md-center">
-                    <div class="col-md-12 dev-para">
-                        <p>Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
-                    </div>
-                </div>
-
-                <div class="row align-items-md-left">
-                    <div class="col-md-6 dev-img2 d-flex align-items-center">
-                        <div class="image-shape2-service">
-                            <img src="Images/Service/32-modified.png" alt="Introduction">
-                        </div>
-                        <div class="dev-text2">
-                            <h3>Learn More</h3>
-                        </div>
-                    </div>
-                </div>
+            <div class="row align-items-md-center">
+              <div class="col-md-12 des-para">
+                <p>
+                  Agency is a business you hire to outsource your digital
+                  marketing efforts, instead of handling in-house.
+                </p>
+              </div>
             </div>
-        </div>
-    </div>
 
-    <h5>Want to explore more? <a href="#">Explore Now</a></h5>
-</div>
+            <div class="row align-items-md-center">
+              <div class="col-md-6 des-img2 d-flex align-items-center">
+                <div class="image-shape2-service">
+                  <img
+                    src="Images/Service/32-modified.png"
+                    alt="Introduction"
+                  />
+                </div>
+                <div class="des-text2">
+                  <h3>Learn more</h3>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <!-- Second column with common border -->
+          <div class="col-md-6 border-around2">
+            <div class="row align-items-md-center">
+              <div class="col-md-6 dev-img d-flex align-items-center">
+                <div class="image-shape-service">
+                  <img src="Images/Service/2-.png" alt="Introduction" />
+                </div>
+                <div class="dev-text">
+                  <h3>Development</h3>
+                </div>
+              </div>
+            </div>
 
-<!--------- portfolio ---------------->
-<div class="container-fluid portfolio-full">
-  <div class="portfolio">
-    <h6>PORTFOLIO</h6>
-    <div class="row text-button-container">
-      <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 portfolio-text">
-        <h1>Latest Work</h1>
-      </div>
-      <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12 d-flex justify-content-md-end justify-content-sm-start explore">
-        <button class="btn btn-primary" id="explore-more">EXPLORE MORE</button>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row new-border">
-      <div class="col-md-4 col-sm-12 col-xs-12 border-portfolio">
-        <div class="portfolio-item">
-          <img src="Images/Portfolio/Bitmap(14).svg" alt="Sofa">
-          <div class="portfolio-overlay">
-            <button class="btn btn-secondary b1">Design</button>
-            <h3>SOFA</h3>
+            <div class="row align-items-md-center">
+              <div class="col-md-12 dev-para">
+                <p>
+                  Agency is a business you hire to outsource your digital
+                  marketing efforts, instead of handling in-house.
+                </p>
+              </div>
+            </div>
+
+            <div class="row align-items-md-left">
+              <div class="col-md-6 dev-img2 d-flex align-items-center">
+                <div class="image-shape2-service">
+                  <img
+                    src="Images/Service/32-modified.png"
+                    alt="Introduction"
+                  />
+                </div>
+                <div class="dev-text2">
+                  <h3>Learn More</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-12 col-xs-12 border-portfolio">
-        <div class="portfolio-item">
-          <img src="Images/Portfolio/Bitmap(15).svg" alt="KeyBoard">
-          <div class="portfolio-overlay">
-            <button class="btn btn-secondary b2">Branding</button>
-            <h3>KeyBoard</h3>
+
+      <h5>Want to explore more? <a href="#">Explore Now</a></h5>
+    </div>
+
+    <!--------- portfolio ---------------->
+    <div class="container-fluid portfolio-full">
+      <div class="portfolio">
+        <h6>PORTFOLIO</h6>
+        <div class="row text-button-container">
+          <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 portfolio-text">
+            <h1>Latest Work</h1>
+          </div>
+          <div
+            class="col-lg-6 col-md-4 col-sm-12 col-xs-12 d-flex justify-content-md-end justify-content-sm-start explore"
+          >
+            <button class="btn btn-primary" id="explore-more">
+              EXPLORE MORE
+            </button>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-12 col-xs-12 border-portfolio">
-        <div class="portfolio-item">
-          <img src="Images/Portfolio/Bitmap(16).svg" alt="Work Media">
-          <div class="portfolio-overlay">
-            <button class="btn btn-secondary b3">Illustration</button>
-            <h3>Work Media</h3>
+      <div class="container-fluid">
+        <div class="row new-border">
+          <div class="col-md-4 col-sm-12 col-xs-12 border-portfolio">
+            <div class="portfolio-item">
+              <img src="Images/Portfolio/Bitmap(14).svg" alt="Sofa" />
+              <div class="portfolio-overlay">
+                <button class="btn btn-secondary b1">Design</button>
+                <h3>SOFA</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12 border-portfolio">
+            <div class="portfolio-item">
+              <img src="Images/Portfolio/Bitmap(15).svg" alt="KeyBoard" />
+              <div class="portfolio-overlay">
+                <button class="btn btn-secondary b2">Branding</button>
+                <h3>KeyBoard</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12 border-portfolio">
+            <div class="portfolio-item">
+              <img src="Images/Portfolio/Bitmap(16).svg" alt="Work Media" />
+              <div class="portfolio-overlay">
+                <button class="btn btn-secondary b3">Illustration</button>
+                <h3>Work Media</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
+    <!--------- professional ---------------->
 
+    <div class="container-fluid professional">
+      <div class="container-fluid prof-container">
+        <div class="row align-items-md-center professional-container">
+          <div class="col-md-6 col-sm-12 prof-image">
+            <img
+              src="Images/Professional/pic.svg"
+              alt="Introduction"
+              class="img-fluid"
+            />
+          </div>
 
-<!--------- professional ---------------->
-
-<div class="container-fluid professional">
-  <div class="container-fluid prof-container">
-    <div class="row align-items-md-center professional-container">
-
-      <div class="col-md-6 col-sm-12 prof-image">
-        <img src="Images/Professional/pic.svg" alt="Introduction" class="img-fluid">
-      </div>
-
-      <div class="col-md-6 col-sm-12 prof-text text-sm-left text-xs-left text-md-left">
-        <h6>GABRIEL PIRES</h6>
-        <h1>Professional Web Designer</h1>
-        <h3>Provides a full service range</h3>
-        <p>Ability to put themselves in the merchant's shoe. It is meant to partner on the long run, and work as an extension of the merchant's team</p>
-        <button class="btn btn-primary" id="about-me">About Me</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-<!--------- years of experinece ---------------->
-
-<div class="container-fluid years-container">
-  <div class="row years-row">
-    <div class="col-md-6 col-sm-12 border-around-years">
-      <div class="row align-items-center">
-        <div class="col-md-6 years-img d-flex align-items-center">
-          <img src="Images/Professional/4_.png" alt="Introduction" class="img-fluid">
-          <div class="years-text text-spacing">
-            <h3>43%</h3>
-            <h4>Years of Experience</h4>
+          <div
+            class="col-md-6 col-sm-12 prof-text text-sm-left text-xs-left text-md-left"
+          >
+            <h6>GABRIEL PIRES</h6>
+            <h1>Professional Web Designer</h1>
+            <h3>Provides a full service range</h3>
+            <p>
+              Ability to put themselves in the merchant's shoe. It is meant to
+              partner on the long run, and work as an extension of the
+              merchant's team
+            </p>
+            <button class="btn btn-primary" id="about-me">About Me</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-md-6 col-sm-12 border-around-years2">
-      <div class="row align-items-center">
-        <div class="col-md-6 years-img d-flex align-items-center">
-          <img src="Images/Professional/5_.png" alt="Introduction" class="img-fluid">
-          <div class="years-text text-spacing">
-            <h3>73+</h3>
-            <h4>Projects Done</h4>
+
+    <!--------- years of experinece ---------------->
+
+    <div class="container-fluid years-container">
+      <div class="row years-row">
+        <div class="col-md-6 col-sm-12 border-around-years">
+          <div class="row align-items-center">
+            <div class="col-md-6 years-img d-flex align-items-center">
+              <img
+                src="Images/Professional/4_.png"
+                alt="Introduction"
+                class="img-fluid"
+              />
+              <div class="years-text text-spacing">
+                <h3>43%</h3>
+                <h4>Years of Experience</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 border-around-years2">
+          <div class="row align-items-center">
+            <div class="col-md-6 years-img d-flex align-items-center">
+              <img
+                src="Images/Professional/5_.png"
+                alt="Introduction"
+                class="img-fluid"
+              />
+              <div class="years-text text-spacing">
+                <h3>73+</h3>
+                <h4>Projects Done</h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
+    <!---------new-look ---------------->
 
-<!---------new-look ---------------->
-
-<div class="container-fluid new-look">
-  <div class="container-fluid look1">
-    <div class="row">
-
-      <div class="col-md-6">
-        <div class="row text-section">
-          <div class="col-md-12">
-            <h6>FEATURES</h6>
-            <h1>Give Your Site A New Look</h1>
-            <h3>Services include technical skills, design, and business understanding.</h3>
-          </div>
-        </div>
-
-        <!-- Check Item 1: Check image and text on the same row with spacing -->
+    <div class="container-fluid new-look">
+      <div class="container-fluid look1">
         <div class="row">
-          <div class="col-md-6 check-container d-flex align-items-center">
-            <div class="check-image">
-              <img src="Images/New-look/check.svg" alt="Check Icon" class="img-fluid">
+          <div class="col-md-6">
+            <div class="row text-section">
+              <div class="col-md-12">
+                <h6>FEATURES</h6>
+                <h1>Give Your Site A New Look</h1>
+                <h3>
+                  Services include technical skills, design, and business
+                  understanding.
+                </h3>
+              </div>
             </div>
-            <div class="check-text">
-              <p>Technicall skills</p>
+
+            <!-- Check Item 1: Check image and text on the same row with spacing -->
+            <div class="row">
+              <div class="col-md-6 check-container d-flex align-items-center">
+                <div class="check-image">
+                  <img
+                    src="Images/New-look/check.svg"
+                    alt="Check Icon"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="check-text">
+                  <p>Technicall skills</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Check Item 2: Text and image on different rows -->
+            <div class="row">
+              <div class="col-md-6 check-container d-flex align-items-center">
+                <div class="check-image">
+                  <img
+                    src="Images/New-look/check.svg"
+                    alt="Check Icon"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="check-text">
+                  <p>Technicall skills</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Check Item 3: Text and image on different rows -->
+            <div class="row">
+              <div class="col-md-6 check-container d-flex align-items-center">
+                <div class="check-image">
+                  <img
+                    src="Images/New-look/check.svg"
+                    alt="Check Icon"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="check-text">
+                  <p>Technicall skills</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 order-first order-md-last image-section">
+            <img
+              src="Images/New-look/pic.svg"
+              alt="Big Image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------gift ---------------->
+
+    <div class="new-section">
+      <div class="gift-shape">
+        <div class="image-shape-gift">
+          <img
+            src="Images/Gift/Star.svg"
+            alt="Introduction"
+            class="img-fluid"
+          />
+          <i class="fa fa-gift"></i>
+        </div>
+      </div>
+    </div>
+
+    <!---------get started ---------------->
+
+    <div class="container-fluid getstarted">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div class="text-and-button">
+            <h3>GET STARTED</h3>
+            <h2>I Help Companies Moves Faster</h2>
+            <button class="btn btn-primary" id="contact-me">CONTACT ME</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+          <div class="text-only">
+            <p>
+              Put themselves in merchant's shoe. It is partner to meant on long
+              run
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+          <div class="image-only">
+            <img
+              src="Images/GetStarted/block(1).svg"
+              alt="Introduction"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------clients ---------------->
+
+    <div class="container-fluid clients">
+      <h3>TESTIMONIALS</h3>
+      <h1>What My <br />Clients Saying</h1>
+
+      <div class="row clients-row">
+        <div class="col-md-4 col-sm-12 border-around">
+          <img
+            src="Images/Clients/star.svg"
+            alt="Introduction"
+            class="img-fluid"
+          />
+          <p>
+            Outsource your digital marketing efforts, instead of handling
+            in-house. They can provide your business with a variety
+          </p>
+          <div class="d-flex align-items-left profile">
+            <img
+              src="Images/Clients/Oval-1.svg"
+              alt="Introduction"
+              class="img-fluid"
+            />
+            <div class="ml-3">
+              <h2>Demon Sal</h2>
+              <p>Twitter</p>
             </div>
           </div>
         </div>
 
-        <!-- Check Item 2: Text and image on different rows -->
+        <div class="col-md-4 col-sm-12 border-around bigger-column">
+          <img
+            src="Images/Clients/star.svg"
+            alt="Introduction"
+            class="img-fluid"
+          />
+          <p>
+            Outsource your digital marketing efforts, instead of handling
+            in-house. They can provide your business with a variety
+          </p>
+          <div class="d-flex align-items-left profile1">
+            <img
+              src="Images/Clients/Oval-2.svg"
+              alt="Introduction"
+              class="img-fluid"
+            />
+            <div class="ml-3">
+              <h2>John Snow</h2>
+              <p>Meta</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 border-around2">
+          <img
+            src="Images/Clients/star.svg"
+            alt="Introduction"
+            class="img-fluid"
+          />
+          <p>
+            Outsource your digital marketing efforts, instead of handling
+            in-house. They can provide your business with a variety
+          </p>
+          <div class="d-flex align-items-left profile">
+            <img
+              src="Images/Clients/Oval.svg"
+              alt="Introduction"
+              class="img-fluid"
+            />
+            <div class="ml-3">
+              <h2>Ciri Bella</h2>
+              <p>Facebook</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="seeall">
+        <button class="btn btn-primary" id="see-all">SEE ALL</button>
+      </div>
+    </div>
+
+    <!---------faq ---------------->
+
+    <div class="container-fluid faq-section">
+      <div class="container faq">
+        <div class="row faq-row">
+          <div class="col-md-6 col-1-faq">
+            <h6>FAQ</h6>
+            <h1>Frequently Asked Questions</h1>
+            <p>
+              A digital agency is a business you hire to outsource your digital
+              marketing efforts instead of handling in-hand.
+            </p>
+            <h5>Contact Me</h5>
+          </div>
+
+          <div class="col-md-6 col-2-faq">
+            <div class="col-md-12 para-faq">
+              <div class="col-md-12 col-2-faq-row-para d-flex">
+                <h2>Hire to outsource digital</h2>
+                <img src="Images/FAQS/up.svg" alt="Image 1" class="img-fluid" />
+              </div>
+              <div class="col-md-12 col-2-faq-para">
+                <div class="faq-text-para">
+                  <p>
+                    A digital agency is a business you hire to outsource your
+                    digital marketing efforts instead of handling in-hand.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-2-faq-row d-flex">
+              <h2>Hire to outsource digital</h2>
+              <img src="Images/FAQS/up.svg" alt="Image 1" class="img-fluid" />
+            </div>
+
+            <div class="col-md-12 col-2-faq-row d-flex">
+              <h2>Hire to outsource digital</h2>
+              <img src="Images/FAQS/up.svg" alt="Image 1" class="img-fluid" />
+            </div>
+
+            <div class="col-md-12 col-2-faq-row d-flex">
+              <h2>Hire to outsource digital</h2>
+              <img src="Images/FAQS/up.svg" alt="Image 1" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-image-faq">
+          <img
+            src="Images/FAQS/logo.svg"
+            alt="Bottom Image"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!---------blogs---------------->
+
+    <div class="container-fluid blog-section">
+      <div class="container blog">
+        <h5>OUR BLOG</h5>
+
+        <div class="row blog-button-container">
+          <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 latest-blog-text">
+            <h1>Latest Blog <br />Articles</h1>
+          </div>
+          <div
+            class="col-lg-6 col-md-4 col-sm-12 col-xs-12 d-flex justify-content-md-end justify-content-sm-start"
+          >
+            <button class="btn btn-primary" id="discover-all">
+              DISCOVER ALL
+            </button>
+          </div>
+        </div>
+
         <div class="row">
-          <div class="col-md-6 check-container d-flex align-items-center">
-            <div class="check-image">
-              <img src="Images/New-look/check.svg" alt="Check Icon" class="img-fluid">
-            </div>
-            <div class="check-text">
-              <p>Technicall skills</p>
+          <div class="col-md-8 col-sm-12 blog-image">
+            <img
+              src="Images/Blog/Bitmap(14).svg"
+              alt="Blog Image 1"
+              class="img-fluid"
+            />
+            <h3>Stories</h3>
+            <h1>Agency is a business you hire to outsource</h1>
+            <p>5 Nov,2021</p>
+          </div>
+
+          <div class="col-md-4 col-sm-12">
+            <div class="blog-sidebar">
+              <div class="col-md-6 col-sm-12 blog-image2">
+                <img
+                  src="Images/Blog/Bitmap(15).svg"
+                  alt="Blog Image 3"
+                  class="img-fluid"
+                />
+                <h3>Design</h3>
+                <h1>Outsourcing digital</h1>
+                <p>5 Aug,2021</p>
+              </div>
+
+              <div class="col-md-6 col-sm-12 blog-image2">
+                <img
+                  src="Images/Blog/Bitmap(16).svg"
+                  alt="Blog Image 4"
+                  class="img-fluid"
+                />
+                <h3>Design</h3>
+                <h1>Outsourcing digital</h1>
+                <p>5 Aug,2021</p>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <!-- Check Item 3: Text and image on different rows -->
-        <div class="row">
-          <div class="col-md-6 check-container d-flex align-items-center">
-            <div class="check-image">
-              <img src="Images/New-look/check.svg" alt="Check Icon" class="img-fluid">
+    <!-------- horizontal line---------------->
+
+    <div class="horizontal-line">
+      <div class="container"></div>
+    </div>
+
+    <!---------newsletter---------------->
+
+    <div class="container-fluid newsletter-form">
+      <div class="row form-block">
+        <div class="col-12 col-md-4">
+          <h1 class="mb-2 mb-md-0">Newsletter</h1>
+          <p class="mb-2 mb-md-0">
+            A digital agency is a business to outsource
+          </p>
+        </div>
+        <div class="col-12 col-md-8">
+          <form
+            class="form-inline justify-content-center justify-content-md-start email-form"
+            action="#"
+            method="post"
+          >
+            <div class="form-group mb-2">
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="Your email address"
+                required
+              />
             </div>
-            <div class="check-text">
-              <p>Technicall skills</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 order-first order-md-last image-section">
-        <img src="Images/New-look/pic.svg" alt="Big Image" class="img-fluid">
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-<!---------gift ---------------->
-
-<div class="new-section">
-  <div class="gift-shape">
-    <div class="image-shape-gift">
-      <img src="Images/Gift/Star.svg" alt="Introduction" class="img-fluid">
-      <i class="fa fa-gift"></i>
-    </div>
-  </div>
-</div>
-
-<!---------get started ---------------->
-
-<div class="container-fluid getstarted">
-
-  <div class="row">
-
-    <div class="col-md-4 col-sm-12">
-      <div class="text-and-button">
-        <h3>GET STARTED</h3>
-        <h2>I Help Companies Moves Faster</h2>
-        <button class="btn btn-primary" id="contact-me">CONTACT ME</button>
-      </div>
-    </div>
-
-
-    <div class="col-md-4 col-sm-12">
-      <div class="text-only">
-        <p>Put themselves in merchant's shoe. It is partner to meant on long run</p>
-      </div>
-    </div>
-
-
-    <div class="col-md-4 col-sm-12">
-      <div class="image-only">
-        <img src="Images/GetStarted/block(1).svg" alt="Introduction" class="img-fluid">
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-<!---------clients ---------------->
-
-<div class="container-fluid clients">
-
-  <h3>TESTIMONIALS</h3>
-  <h1>What My <br>Clients Saying</h1>
-
-  <div class="row clients-row">
-    <div class="col-md-4 col-sm-12 border-around">
-      <img src="Images/Clients/star.svg" alt="Introduction" class="img-fluid">
-      <p>Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety</p>
-      <div class="d-flex align-items-left profile">
-        <img src="Images/Clients/Oval-1.svg" alt="Introduction" class="img-fluid">
-        <div class="ml-3">
-          <h2>Demon Sal</h2>
-          <p>Twitter</p>
+            <button type="submit" class="btn btn-primary" id="subscribe">
+              Subscribe
+            </button>
+          </form>
         </div>
       </div>
     </div>
 
-    <div class="col-md-4 col-sm-12 border-around bigger-column">
-      <img src="Images/Clients/star.svg" alt="Introduction" class="img-fluid">
-      <p>Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety</p>
-      <div class="d-flex align-items-left profile1">
-        <img src="Images/Clients/Oval-2.svg" alt="Introduction" class="img-fluid">
-        <div class="ml-3">
-          <h2>John Snow</h2>
-          <p>Meta</p>
-        </div>
-      </div>
-    </div>
+    <!---------contact---------------->
 
-    <div class="col-md-4 col-sm-12 border-around2">
-      <img src="Images/Clients/star.svg" alt="Introduction" class="img-fluid">
-      <p>Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety</p>
-      <div class="d-flex align-items-left profile">
-        <img src="Images/Clients/Oval.svg" alt="Introduction" class="img-fluid">
-        <div class="ml-3">
-          <h2>Ciri Bella</h2>
-          <p>Facebook</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="seeall">
-    <button class="btn btn-primary" id="see-all">SEE ALL</button>
-  </div>
-
-</div>
-
-<!---------faq ---------------->
-
-<div class="container-fluid faq-section">
-  <div class="container faq">
-    <div class="row faq-row">
-
-      <div class="col-md-6 col-1-faq">
-        <h6>FAQ</h6>
-        <h1>Frequently Asked Questions</h1>
-        <p>A digital agency is a business you hire to outsource your digital marketing efforts instead of handling in-hand.</p>
-        <h5>Contact Me</h5>
-      </div>
-
-      <div class="col-md-6 col-2-faq">
-
-
-        <div class="col-md-12 para-faq">
-        <div class="col-md-12 col-2-faq-row-para d-flex">
-            <h2>Hire to outsource digital</h2>
-            <img src="Images/FAQS/up.svg" alt="Image 1" class="img-fluid">
-        </div>
-        <div class="col-md-12 col-2-faq-para">
-          <div class="faq-text-para">
-            <p>A digital agency is a business you hire to outsource your digital marketing efforts instead of handling in-hand.</p>
-          </div>
-        </div>
-        </div>
-
-
-        <div class="col-md-12 col-2-faq-row d-flex">
-            <h2>Hire to outsource digital</h2>
-            <img src="Images/FAQS/up.svg" alt="Image 1" class="img-fluid">
-        </div>
-
-        <div class="col-md-12 col-2-faq-row d-flex">
-            <h2>Hire to outsource digital</h2>
-            <img src="Images/FAQS/up.svg" alt="Image 1" class="img-fluid">
-
-        </div>
-
-        <div class="col-md-12 col-2-faq-row d-flex">
-            <h2>Hire to outsource digital</h2>
-            <img src="Images/FAQS/up.svg" alt="Image 1" class="img-fluid">
-        </div>
-
-      </div>
-    </div>
-
-    <div class="bottom-image-faq">
-      <img src="Images/FAQS/logo.svg" alt="Bottom Image" class="img-fluid">
-    </div>
-
-  </div>
-</div>
-
-<!---------blogs---------------->
-
-<div class="container-fluid blog-section">
-  <div class="container blog">
-
-    <h5>OUR BLOG</h5>
-
-    <div class="row blog-button-container">
-      <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 latest-blog-text">
-        <h1>Latest Blog <br>Articles</h1>
-      </div>
-      <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12 d-flex justify-content-md-end justify-content-sm-start">
-        <button class="btn btn-primary" id="discover-all">DISCOVER ALL</button>
-      </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-8 col-sm-12 blog-image">
-          <img src="Images/Blog/Bitmap(14).svg" alt="Blog Image 1" class="img-fluid">
-          <h3>Stories</h3>
-          <h1>Agency is a business you hire to outsource</h1>
-          <p>5 Nov,2021</p>
-        </div>
-
-      <div class="col-md-4 col-sm-12">
-        <div class="blog-sidebar">
-
-            <div class="col-md-6 col-sm-12 blog-image2">
-              <img src="Images/Blog/Bitmap(15).svg" alt="Blog Image 3" class="img-fluid">
-              <h3>Design</h3>
-              <h1>Outsourcing digital</h1>
-              <p>5 Aug,2021</p>
-            </div>
-
-
-            <div class="col-md-6 col-sm-12 blog-image2">
-              <img src="Images/Blog/Bitmap(16).svg" alt="Blog Image 4" class="img-fluid">
-              <h3>Design</h3>
-              <h1>Outsourcing digital</h1>
-              <p>5 Aug,2021</p>
-            </div>
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-------- horizontal line---------------->
-
-
-<div class="horizontal-line">
-  <div class="container"></div>
-</div>
-
-<!---------newsletter---------------->
-
-<div class="container-fluid newsletter-form">
-  <div class="row">
-    <div class="col-12 col-md-4">
-      <h1 class="mb-2 mb-md-0">Newsletter</h1>
-      <p class="mb-2 mb-md-0">A digital agency is a business to outsource</p>
-    </div>
-    <div class="col-12 col-md-8">
-      <form class="form-inline justify-content-center justify-content-md-start" action="#" method="post">
-        <div class="form-group mb-2">
-          <input type="email" class="form-control" name="email" placeholder="Your email address" required>
-        </div>
-        <button type="submit" class="btn btn-primary" id="subscribe">Subscribe</button>
-      </form>
-    </div>
-  </div>
-</div>
-
-
-<!---------contact---------------->
-
-<div class="container-fluid contact-section">
-  <div class="row">
-      <!-- Contact Form (Medium and Large Screens) -->
-      <div class="col-md-6">
+    <div class="container-fluid contact-section">
+      <div class="row">
+        <!-- Contact Form (Medium and Large Screens) -->
+        <div class="col-md-6">
           <div class="contact-form">
-              <h2 class="contact-heading">Get In Touch</h2>
-              <form action="#" method="post">
-                  <!-- Form Fields Go Here -->
-                  <div class="form-group">
-                      <input type="email" class="form-control" name="email" placeholder="Your email address" required>
-                  </div>
-                  <div class="form-group">
-                      <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                  </div>
-                  <div class="form-group">
-                      <textarea class="form-control" name="message" placeholder="Your message" required></textarea>
-                  </div>
-                  <div class="d-flex justify-content-end">
-                      <button type="submit" class="btn btn-primary" id="submit-now">SUBMIT NOW</button>
-                  </div>
-              </form>
+            <h2 class="contact-heading">Get In Touch</h2>
+            <form action="#" method="post">
+              <!-- Form Fields Go Here -->
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  placeholder="Your message"
+                  required
+                ></textarea>
+              </div>
+              <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary" id="submit-now">
+                  SUBMIT NOW
+                </button>
+              </div>
+            </form>
           </div>
-      </div>
+        </div>
 
-
-      <!-- Contact Info (Medium and Large Screens) -->
-      <div class="col-md-6">
+        <!-- Contact Info (Medium and Large Screens) -->
+        <div class="col-md-6">
           <div class="contact-info">
-              <h5 class="contact-heading">CONTACT</h5>
-              <h1 class="contact-heading">Contact Me</h1>
-              <p>A digital agency is a business you hire to outsource your digital marketing efforts instead of handling in-hand</p>
-              <div class="contact-row">
-                  <div class="contact-icon-container">
-                      <img src="Images/Contact/Oval(2).svg" alt="Your Image 1" class="contact-image">
-                      <i class="fa fa-compass contact-icon"></i>
-                  </div>
-                  <div class="contact-text">123 Main Street, City, Country</div>
+            <h5 class="contact-heading">CONTACT</h5>
+            <h1 class="contact-heading">Contact Me</h1>
+            <p>
+              A digital agency is a business you hire to outsource your digital
+              marketing efforts instead of handling in-hand
+            </p>
+            <div class="contact-row">
+              <div class="contact-icon-container">
+                <img
+                  src="Images/Contact/Oval(2).svg"
+                  alt="Your Image 1"
+                  class="contact-image"
+                />
+                <i class="fa fa-compass contact-icon"></i>
               </div>
-              <div class="contact-row">
-                  <div class="contact-icon-container">
-                      <img src="Images/Contact/Oval(2).svg" alt="Your Image 2" class="contact-image">
-                      <i class="fa fa-phone contact-icon"></i>
-                  </div>
-                  <div class="contact-text">+123 456 7890</div>
+              <div class="contact-text">123 Main Street, City, Country</div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon-container">
+                <img
+                  src="Images/Contact/Oval(2).svg"
+                  alt="Your Image 2"
+                  class="contact-image"
+                />
+                <i class="fa fa-phone contact-icon"></i>
               </div>
-              <div class="contact-row">
-                  <div class="contact-icon-container">
-                      <img src="Images/Contact/Oval(2).svg" alt="Your Image 3" class="contact-image">
-                      <i class="fa fa-envelope  contact-icon"></i>
-                  </div>
-                  <div class="contact-text">123 Main Street, City, Country</div>
+              <div class="contact-text">+123 456 7890</div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon-container">
+                <img
+                  src="Images/Contact/Oval(2).svg"
+                  alt="Your Image 3"
+                  class="contact-image"
+                />
+                <i class="fa fa-envelope contact-icon"></i>
               </div>
-          </div>
-      </div>
-  </div>
-</div>
-
-
-
-<!---------project---------------->
-
-<div class="container-fluid project">
-  <div class="container-fluid project-container">
-    <div class="row align-items-md-center">
-      <div class="col-md-6 proj-text-class text-left">
-        <h6>GABRIEL PIRES</h6>
-        <h1>Help To Build, Your Dream Project</h1>
-        <p>Agency provides a full service range including technical skills, design and business understanding.</p>
-        <button class="btn btn-primary" id="contact-me">CONTACT ME</button>
-      </div>
-      <div class="col-md-6 proj-image-class order-first order-md-last mx-auto">
-        <img src="Images/Main/pic.svg" alt="Introduction" class="img-fluid">
-      </div>
-    </div>
-  </div>
-</div>
-
-<!---------pictures---------------->
-
-<div class="row pictures  no-gutters">
-  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-    <img src="Images/Pictures/Bitmap(14).svg" alt="Image 1" class="img-fluid picture">
-  </div>
-  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-    <img src="Images/Pictures/Bitmap(15).svg" alt="Image 2" class="img-fluid picture">
-  </div>
-  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-    <img src="Images/Pictures/Bitmap(16).svg" alt="Image 3" class="img-fluid picture">
-  </div>
-  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-    <img src="Images/Pictures/Bitmap(17).svg" alt="Image 4" class="img-fluid picture">
-  </div>
-  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-    <img src="Images/Pictures/Bitmap(18).svg" alt="Image 5" class="img-fluid picture">
-  </div>
-  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-    <img src="Images/Pictures/Bitmap(19).svg" alt="Image 6" class="img-fluid picture">
-  </div>
-</div>
-
-<!---------footer---------------->
-
-<footer class="container-fluid footer">
-  <div class="container foot">
-    <div class="row">
-      <div class="col-12 col-md-3 mb-4 mb-md-0">
-        <h6 class="footer-heading">Personal</h6>
-      </div>
-      <div class="col-6 col-md-2 mb-4 mb-md-0">
-        <h3>MENU</h3>
-        <p>About</p>
-        <p>Services</p>
-        <p>Blog</p>
-        <p>Contact</p>
-      </div>
-      <div class="col-6 col-md-2 mb-4 mb-md-0">
-        <h3>SERVICE</h3>
-        <p>Design</p>
-        <p>Development</p>
-        <p>Marketing</p>
-        <p>See More</p>
-      </div>
-      <div class="col-12 col-md-5 d-flex flex-md-column justify-content-between">
-        <div class="row">
-          <div class="col-12 footer-img text-center">
-            <img src="Images/Footer/social.svg" alt="Image" class="img-fluid">
+              <div class="contact-text">123 Main Street, City, Country</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <hr style="background-color: #3A3C56; height: 1px; border: none;">
-    <div class="row copyright mt-4">
-      <div class="col-12 col-md-4 mb-4 mb-md-0">
-        <p class="text-center text-md-left">COPYRIGHT © 2023 LAQQIQ. ALL RIGHTS RESERVED.</p>
-      </div>
-      <div class="col-6 col-md-4 mb-4 mb-md-0">
-        <p class="text-center text-md-left1">Terms of Use</p>
-      </div>
-      <div class="col-6 col-md-4 mb-4 mb-md-0">
-        <p class="text-center text-md-left2">Privacy Policy</p>
+
+    <!---------project---------------->
+
+    <div class="container-fluid project">
+      <div class="container-fluid project-container">
+        <div class="row align-items-md-center">
+          <div class="col-md-6 proj-text-class text-left">
+            <h6>GABRIEL PIRES</h6>
+            <h1>Help To Build, Your Dream Project</h1>
+            <p>
+              Agency provides a full service range including technical skills,
+              design and business understanding.
+            </p>
+            <button class="btn btn-primary" id="contact-me">CONTACT ME</button>
+          </div>
+          <div
+            class="col-md-6 proj-image-class order-first order-md-last mx-auto"
+          >
+            <img
+              src="Images/Main/pic.svg"
+              alt="Introduction"
+              class="img-fluid"
+            />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
 
-</footer>
+    <!---------pictures---------------->
 
+    <div class="row pictures no-gutters">
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+        <img
+          src="Images/Pictures/Bitmap(14).svg"
+          alt="Image 1"
+          class="img-fluid picture"
+        />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+        <img
+          src="Images/Pictures/Bitmap(15).svg"
+          alt="Image 2"
+          class="img-fluid picture"
+        />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+        <img
+          src="Images/Pictures/Bitmap(16).svg"
+          alt="Image 3"
+          class="img-fluid picture"
+        />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+        <img
+          src="Images/Pictures/Bitmap(17).svg"
+          alt="Image 4"
+          class="img-fluid picture"
+        />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+        <img
+          src="Images/Pictures/Bitmap(18).svg"
+          alt="Image 5"
+          class="img-fluid picture"
+        />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+        <img
+          src="Images/Pictures/Bitmap(19).svg"
+          alt="Image 6"
+          class="img-fluid picture"
+        />
+      </div>
+    </div>
 
+    <!---------footer---------------->
 
-
-
-</body>
+    <footer class="container-fluid footer">
+      <div class="container foot">
+        <div class="row">
+          <div class="col-12 col-md-3 mb-4 mb-md-0">
+            <h6 class="footer-heading">Personal</h6>
+          </div>
+          <div class="col-6 col-md-2 mb-4 mb-md-0">
+            <h3>MENU</h3>
+            <p>About</p>
+            <p>Services</p>
+            <p>Blog</p>
+            <p>Contact</p>
+          </div>
+          <div class="col-6 col-md-2 mb-4 mb-md-0">
+            <h3>SERVICE</h3>
+            <p>Design</p>
+            <p>Development</p>
+            <p>Marketing</p>
+            <p>See More</p>
+          </div>
+          <div
+            class="col-12 col-md-5 d-flex flex-md-column justify-content-between"
+          >
+            <div class="row">
+              <div class="col-12 footer-img text-center">
+                <img
+                  src="Images/Footer/social.svg"
+                  alt="Image"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr style="background-color: #3a3c56; height: 1px; border: none" />
+        <div class="row copyright mt-4">
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <p class="text-center text-md-left">
+              COPYRIGHT © 2023 LAQQIQ. ALL RIGHTS RESERVED.
+            </p>
+          </div>
+          <div class="col-6 col-md-4 mb-4 mb-md-0">
+            <p class="text-center text-md-left1">Terms of Use</p>
+          </div>
+          <div class="col-6 col-md-4 mb-4 mb-md-0">
+            <p class="text-center text-md-left2">Privacy Policy</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

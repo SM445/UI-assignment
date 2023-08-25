@@ -1,6 +1,5 @@
 body{
   font-family: 'Epilogue', sans-serif;
-  overflow-x: hidden;
 }
 
 /*--------------------NAVBAR------------------------------------- */
@@ -421,7 +420,6 @@ body{
 }
 
 .prof-container {
-  display: flex;
   padding-top: 12rem;
 }
 
@@ -984,7 +982,7 @@ body{
   max-width: 100%;
   height: auto;
   float: right;
-  margin-left:9rem;
+  margin-left:0rem;
 
 
 }
@@ -1024,7 +1022,7 @@ body{
   max-width: 100%;
   height: auto;
   float: left;
-  margin-left:8rem;
+  margin-left:0rem;
   }
 
 
@@ -1175,7 +1173,7 @@ body{
 
 .horizontal-line .container{
   background-color: #F3D1BF;
-  width: 1170px;
+  max-width: 1170px;
   height: 1px;
   margin: 20px auto;
 }
@@ -1183,7 +1181,12 @@ body{
 /*-------------------NEWS-LETTER-------------------*/
 .newsletter-form {
   background-color:#FDF0E9;
-  padding:0 18rem 3rem;
+  padding:0 18rem 2rem;
+}
+
+.form-block{
+  max-width: 100%;
+  align-items: left;
 }
 
 .newsletter-form h1 {
@@ -1192,6 +1195,10 @@ body{
   margin: 0;
   padding: 5px 0;
   color:#391400;
+}
+
+.form-group{
+  max-width: 100%;
 }
 
 .newsletter-form p {
@@ -1910,6 +1917,9 @@ body{
   margin-left:0;
 }
 
+.form-group{
+  padding-left: 0rem;
+}
 }
 
 
@@ -1977,6 +1987,10 @@ body{
     padding:0 0 3rem 3rem;
   }
 
+  .form-group{
+    padding-left: 0rem;
+  }
+
 }
 
 
@@ -2004,11 +2018,17 @@ body{
   }
 
   .prof-container {
+
     padding-top: 5rem;
     padding-right: 0rem;
-    padding-left: 19rem;
+    padding-left: 16rem;
+    margin-right: 0;
     text-align: left;
+  }
 
+  .professional-container{
+    padding-right: 0;
+    margin-right: 0;
 
   }
 
@@ -2016,6 +2036,9 @@ body{
     padding-top: 4rem;
     padding-left: 0rem;
     text-align: center;
+    max-width: 100%;
+    padding-right: 0;
+    margin-right: 0;
   }
 
   .prof-image {
@@ -2099,6 +2122,10 @@ body{
   .contact-section{
     padding: 10rem 38rem;
 
+  }
+
+  .form-group{
+    padding-left: 0rem;
   }
 
 
